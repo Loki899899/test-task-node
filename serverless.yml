@@ -48,3 +48,16 @@ functions:
             origin: '*'
             allowCredentials: false
 
+  getWeather:
+    handler: src/handlers/weatherHandler.getWeather
+    events:
+      - http:
+          path: api/weather
+          method: get
+
+  togglePin:
+    handler: src/handlers/weatherHandler.togglePin
+    events:
+      - http:
+          path: api/weather/togglePin
+          method: post
