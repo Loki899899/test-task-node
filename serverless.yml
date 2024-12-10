@@ -25,6 +25,9 @@ provider:
   versionFunctions: false
   environment:
     MONGO_DB_URL: ${self:custom.MONGO_DB_URL}
+    OPENWEATHER_API_KEY: ${env:OPENWEATHER_API_KEY}
+    WEATHERAPI_API_KEY: ${env:WEATHERAPI_API_KEY}
+    WEATHERSTACK_API_KEY: ${env:WEATHERSTACK_API_KEY}
 
 plugins:
   - serverless-offline
